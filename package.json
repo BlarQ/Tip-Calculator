@@ -1,0 +1,21 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "Tip Calaculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "b": "tailwindcss -i ./damola.css -o ./collins.css --watch"
+  },
+  "keywords": [
+    "Html",
+    "CSS",
+    "and",
+    "Tailwindcss"
+  ],
+  "author": "BlarQ",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

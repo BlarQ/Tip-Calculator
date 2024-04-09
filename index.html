@@ -8,75 +8,203 @@
     <title>Tip Calculator</title>
 </head>
 <body>
-    <div>
-        <h1 class=" bg-teal-200 hidden sm:flex justify-center items-center py-8">SPLITTER</h1><span class=" bg-teal-200 flex justify-center items-center sm:hidden py-7 font-mono font-bold text-4xl">SPLI<BR>TTER</BR></span>
-        <div class="bg-slate-50 min-h-[85vh] rounded-t-2xl mt-[-10px]">
-            <h2 class="pt-8
-                        ml-5
-                        font-mono
-                        font-bold
-                        text-xl"
-            >Bill</h2>
-
-            <div class="bg-gray-300
-            ml-5
-            rounded-md
-            h-10
-            w-80
-            px-5
-            py-2
-            flex
-            justify-between" >
+    <div class="min-h-[100vh]">
+        <h1 class=" bg-teal-200 hidden sm:flex justify-center items-center py-8">SPLITTER</h1><span class=" bg-blue-200 flex justify-center items-center sm:hidden pt-5 pb-6 font-mono font-bold text-2xl 
+        tracking-[10px]
+        text-teal-900">SPLI<BR>TTER</BR></span>
+        <div class="bg-slate-50 min-h-[85vh] rounded-t-2xl mt-[-15px]">
+            <h2 class="pt-2
+                                    ml-5
+                                    font-mono
+                                    font-extrabold
+                                    text-teal-900
+                                    text-lg">Bill</h2>
+            
+            <!-- <div class="bg-gray-300
+                        mx-5
+                        rounded-md
+                        h-10
+                        max-w-full
+                        px-5
+                        py-2
+                        flex
+                        justify-between">
                 <p class="font-mono
+                            text-gray-600
+                            text-xl
+                            font-semibold">$</p>
+                <P class="font-mono
+                        text-teal-950
+                            text-xl
+                            font-black
+                            ">142.55</P>
+            </div> -->
+            <div class="bg-gray-400
+            mx-5
+            rounded-md
+            flex
+            items-center
+            h-10">
+                <input class="min-w-full text-right h-10 bg-transparent px-2" type="number" name="number" id="number">
+                <div class="absolute 
+                flex 
+                justify-center
+                items-center
+                ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-4 mb-1 bi bi-currency-dollar
                 text-gray-600
                 text-xl
-                font-semibold"
-                >$</p>
-                <P class="font-mono
-                text-black
-                text-xl
-                font-black
-                "
-                >142.55</P>
+                mt-1
+                font-semibold" viewBox="0 0 16 16">
+                            <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                          </svg>
+                </div>
             </div>
-
+            
             <h2 class="px-5
-            mt-8
-            font-mono
-            font-extrabold"
-            >Select Tip %</h2>
-
+                        mt-2
+                        font-mono
+                        text-teal-950
+                        font-extrabold">Select Tip %</h2>
+            
             <div class="px-5
-            mt-4
-            grid
-            grid-cols-2
-            gap-y
-            text-center">
-                <section class="bg-teal-950
-                rounded-md
-                w-40
-                py-4"
-                >5%</section>
-                <section class="bg-teal-950
-                rounded-md
-                w-40
-                py-4">10%</section>
-                <section class="bg-teal-950
-                rounded-md
-                w-40
-                py-4">15%</section>
-                <section class="bg-teal-950
-                rounded-md
-                w-40
-                py-4">25%</section>
-                <section class="bg-teal-950
-                rounded-md
-                w-40
-                py-4">50%</section>
-                <section class="bg-teal-950
-                rounded-md
-                w-40
-                py-4">Custom</section>
+                        grid
+                        grid-cols-2
+                        gap-y-2
+                        gap-x-2
+                        text-center">
+                    <section class="bg-teal-950
+                                rounded-md
+                                min-w-20
+                                py-2
+                                text-white
+                                font-sans
+                                text-xl
+                                font-semibold">5%</section>
+                    <section class="bg-teal-950
+                                rounded-md
+                                min-w-20
+                                py-2
+                                text-white
+                                font-sans
+                                text-xl
+                                font-semibold">10%</section>
+                    <section class="bg-teal-500
+                                rounded-md
+                                min-w-20
+                                py-2
+                                text-teal-950
+                                font-sans
+                                text-xl
+                                font-extrabold">15%</section>
+                    <section class="bg-teal-950
+                                rounded-md
+                                min-w-20
+                                py-2
+                                text-white
+                                font-sans
+                                text-xl
+                                font-semibold">25%</section>
+                    <section class="bg-teal-950
+                                rounded-md
+                                min-w-20
+                                py-2
+                                text-white
+                                font-sans
+                                text-xl
+                                font-semibold">50%</section>
+                    <section class="bg-teal-50
+                                border-2
+                                rounded-md
+                                min-w-20
+                                py-2
+                                text-gray-400
+                                text-xl
+                                font-mono
+                                font-extrabold">Custom</section>
+
+            </div>
+            <h2 class="px-5
+                    mt-1
+                    font-mono
+                    text-teal-950
+                    font-extrabold">Number of People</h2>
+            <div class="bg-gray-300
+                    mx-5
+                    rounded-md
+                    h-10
+                    max-w-full
+                    px-5
+                    py-2
+                    flex
+                    justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-fill text-gray-400 mt-1" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+                <p class="font-mono
+                    text-teal-950
+                    text-xl
+                    font-black
+                    ">5</p>
+            </div>
+            
+            <div class="bg-teal-950
+                    mx-5
+                    my-4
+                    max-w-full
+                    rounded-xl
+                    px-6
+                    py-2">
+                <div>
+                    <div class="grid 
+                            grid-cols-2 
+                            items-center
+                            justify-evenly
+                            py-2">
+                        <p class="text-white
+                            font-mono"
+                            >Tip Amount<br>
+                            <span class="text-gray-400
+                                    text-[14px]"
+                                    >/ person</span></p>
+            
+                        <p class="text-right
+                            text-teal-500
+                            font-mono
+                            text-2xl
+                            font-extrabold"
+                            >$4.27</p>
+                    </div>
+                    <div class="grid 
+                            grid-cols-2 
+                            items-center
+                            justify-evenly
+                            py-1">
+                        <p class="text-white 
+                            font-mono
+                            py-2">Total<br>
+                            <span class="text-gray-400
+                                    text-[14px]"
+                                    >/ person</span></p>
+            
+                        <p class="text-right
+                            text-teal-500
+                            font-mono
+                            text-2xl
+                            font-extrabold"
+                            >$32.79</p>
+                    </div>
+                    <button class="bg-teal-500
+                    text-teal-950
+                    font-sans
+                    font-bold
+                    rounded-md
+                    min-w-full
+                    py-3
+                    cursor-pointer"
+                    >RESET</button>
+                </div>
             </div>
         </div>
     </div>

@@ -8,20 +8,21 @@
     <title>Tip Calculator</title>
 </head>
 <body>
-    <div class="min-h-[100vh] sm:bg-blue-200">
+    <div class="min-h-[100dvh] sm:bg-blue-200">
         <h1 class=" bg-blue-200 flex justify-center items-center pt-5 pb-6 sm:py-16 font-mono font-bold text-2xl 
         tracking-[10px] cursor-default
         text-teal-900">SPLI<BR>TTER</BR></h1>
-        <div class="bg-slate-50 sm:rounded-2xl sm:max-w-[55%] sm:grid grid-cols-2 sm:items-center sm:justify-center mx-auto rounded-t-2xl mt-[-15px]">
-            <div class="">
+        <div class="bg-slate-50 lg:rounded-2xl lg:max-w-[55%] lg:grid grid-cols-2 lg:items-center lg:justify-center mx-auto rounded-t-2xl mt-[-15px] lg:mt-0">
+            <div class="lg:pl-4">
                 <h1 class="pt-2
+                            lg:mt-[-25px]
                             ml-5
                             font-mono
                             cursor-default
                             font-extrabold
                             text-teal-900
                             text-lg
-                            sm:text-base">Bill</h1>
+                            lg:text-sm">Bill</h1>
                             <!-- <div class="bg-gray-300
                                         mx-5
                                         rounded-md
@@ -47,10 +48,11 @@
                             flex
                             items-center
                             h-10
-                            sm:h-8">
+                            lg:mb-8
+                            lg:h-8">
                                 <input class="min-w-full
-                                focus:outline-green-950
-                                text-right h-10 sm:h-8 bg-transparent
+                                focus:outline-teal-500
+                                text-right h-10 lg:h-8 bg-transparent
                                 font-mono text-2xl sm:text-xl font-extrabold px-2" type="number" name="number" id="number">
                                 <div class="absolute 
                                 flex 
@@ -72,59 +74,85 @@
                                         font-mono
                                         cursor-default
                                         text-teal-950
-                                        font-extrabold">Select Tip %</h2>
+                                        font-extrabold
+                                        lg:text-sm">Select Tip %</h2>
                             
                             <div class="px-5
                                         grid
                                         grid-cols-2
-                                        gap-y-2
-                                        gap-x-2
+                                        sm:grid-cols-3
+                                        gap-2
                                         text-center">
-                                    <section class="bg-teal-950
+                                    <button class="bg-teal-950
                                                 rounded-md
                                                 min-w-20
+                                                sm:min-w-10
                                                 py-2
+                                                lg:py-1
+                                                lg:h-10
                                                 text-white
+                                                hover:text-teal-950
+                                                hover:bg-teal-500
                                                 font-sans
                                                 text-xl
                                                 cursor-pointer
-                                                font-semibold">5%</section>
-                                    <section class="bg-teal-950
+                                                font-semibold">5%</button>
+                                    <button class="bg-teal-950
                                                 rounded-md
                                                 min-w-20
+                                                lg:min-w-10
                                                 py-2
-                                                cursor-pointer
-                                                text-white
-                                                font-sans
-                                                text-xl
-                                                font-semibold">10%</section>
-                                    <section class="bg-teal-500
-                                                rounded-md
-                                                min-w-20
-                                                py-2
-                                                cursor-pointer
-                                                text-teal-950
-                                                font-sans
-                                                text-xl
-                                                font-extrabold">15%</section>
-                                    <section class="bg-teal-950
-                                                rounded-md
-                                                min-w-20
-                                                py-2
+                                                lg:py-1
+                                                lg:h-10
                                                 cursor-pointer
                                                 text-white
+                                                hover:text-teal-950
+                                                hover:bg-teal-500
                                                 font-sans
                                                 text-xl
-                                                font-semibold">25%</section>
-                                    <section class="bg-teal-950
+                                                font-semibold">10%</button>
+                                    <button class="bg-teal-950
                                                 rounded-md
                                                 min-w-20
+                                                lg:min-w-10
                                                 py-2
+                                                lg:py-1
+                                                lg:h-10
                                                 cursor-pointer
                                                 text-white
+                                                hover:text-teal-950
+                                                hover:bg-teal-500
                                                 font-sans
                                                 text-xl
-                                                font-semibold">50%</section>
+                                                font-extrabold">15%</button>
+                                    <button class="bg-teal-950
+                                                rounded-md
+                                                min-w-20
+                                                lg:min-w-10
+                                                py-2
+                                                lg:py-1
+                                                lg:h-10
+                                                cursor-pointer
+                                                text-white
+                                                hover:text-teal-950
+                                                hover:bg-teal-500
+                                                font-sans
+                                                text-xl
+                                                font-semibold">25%</button>
+                                    <button class="bg-teal-950
+                                                rounded-md
+                                                min-w-20
+                                                lg:min-w-10
+                                                py-2
+                                                lg:py-1
+                                                lg:h-10
+                                                cursor-pointer
+                                                text-white
+                                                hover:text-teal-950
+                                                hover:bg-teal-500
+                                                font-sans
+                                                text-xl
+                                                font-semibold">50%</button>
                                     <!-- <section class="bg-teal-50
                                                 border-2
                                                 rounded-md
@@ -139,12 +167,16 @@
                                     border-2
                                     rounded-md
                                     min-w-20
-                                    py-2 pl-2
+                                    lg:min-w-10
+                                    py-2 pl-3
+                                    lg:py-1
+                                    lg:h-10
                                     text-center
                                     text-gray-300
-                                    focus:outline-green-950
+                                    focus:outline-teal-500
                                     bg-transparent
-                                    text-2xl
+                                    text-xl
+                                    lg:text-sm
                                     font-mono
                                     font-extrabold
                                     " type="number" name="number" id="number" placeholder="Custom">
@@ -152,10 +184,12 @@
                             </div>
                             <h2 class="px-5
                                     mt-1
+                                    lg:mt-8
                                     font-mono
                                     text-teal-950
                                     cursor-default
-                                    font-extrabold">Number of People</h2>
+                                    font-extrabold
+                                    lg:text-sm">Number of People</h2>
                             <!-- <div class="bg-gray-300
                                     mx-5
                                     rounded-md
@@ -181,10 +215,11 @@
                             rounded-md
                             flex
                             items-center
-                            h-10">
+                            h-10
+                            lg:h-8">
                                 <input class="min-w-full
-                                focus:outline-green-950
-                                text-right h-10 bg-transparent
+                                focus:outline-teal-500
+                                text-right h-10 bg-transparent lg:h-8
                                 font-mono text-2xl font-extrabold px-2" type="number" name="number" id="number">
                                 <div class="absolute 
                                 flex 
@@ -214,21 +249,21 @@
                             items-center
                             justify-evenly
                             py-2
-                            sm:my-4">
+                            lg:my-1">
                         <p class="text-white
                             font-mono
-                            sm:text-xs"
+                            lg:text-xs"
                             >Tip Amount<br>
                             <span class="text-gray-400
                                     text-[14px]
-                                    sm:text-xs"
+                                    lg:text-xs"
                                     >/ person</span></p>
             
                         <p class="text-right
                             text-teal-500
                             font-mono
                             text-2xl
-                            sm:text-4xl
+                            lg:text-4xl
                             font-extrabold"
                             >$4.27</p>
                     </div>
@@ -239,32 +274,33 @@
                             py-1">
                         <p class="text-white 
                             font-mono
-                            sm:text-xs
+                            lg:text-xs
                             py-2">Total<br>
                             <span class="text-gray-400
                                     text-[14px]
-                                    sm:text-xs"
+                                    lg:text-xs"
                                     >/ person</span></p>
             
                         <p class="text-right
                             text-teal-500
                             font-mono
                             text-2xl
-                            sm:text-4xl
+                            lg:text-4xl
                             font-extrabold"
                             >$32.79</p>
                     </div>
                     </div>
-                    <button class="bg-teal-500
+                    <button class="hover:bg-teal-500
+                    bg-teal-800
                     text-teal-950
-                    sm:mt-28
-                    sm:mb-4
+                    lg:mt-28
+                    lg:mb-4
                     font-sans
                     font-bold
                     rounded-md
                     min-w-full
                     py-3
-                    sm:py-2
+                    lg:py-2
                     cursor-pointer"
                     >RESET</button>
                 </div>

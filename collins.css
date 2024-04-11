@@ -730,8 +730,32 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .ml-4 {
@@ -752,10 +776,6 @@ video {
 
 .mt-\[-15px\] {
   margin-top: -15px;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .box-border {
@@ -861,40 +881,12 @@ video {
   height: 2.5rem;
 }
 
-.max-h-10 {
-  max-height: 2.5rem;
-}
-
-.max-h-\[20vh\] {
-  max-height: 20vh;
-}
-
-.max-h-\[40vh\] {
-  max-height: 40vh;
-}
-
-.max-h-\[90vh\] {
-  max-height: 90vh;
-}
-
-.max-h-\[100vh\] {
-  max-height: 100vh;
-}
-
 .min-h-\[100dvh\] {
   min-height: 100dvh;
 }
 
-.min-h-\[40vh\] {
-  min-height: 40vh;
-}
-
 .min-h-\[20vh\] {
   min-height: 20vh;
-}
-
-.min-h-\[90vh\] {
-  min-height: 90vh;
 }
 
 .w-\[this-is\\\\\] {
@@ -1771,16 +1763,16 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-b {
@@ -2090,19 +2082,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-6 {
@@ -2860,10 +2842,6 @@ video {
 
   .lg\:justify-center {
     justify-content: center;
-  }
-
-  .lg\:rounded-2xl {
-    border-radius: 1rem;
   }
 
   .lg\:py-1 {
